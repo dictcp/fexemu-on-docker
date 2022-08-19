@@ -1,0 +1,19 @@
+diff --git a/Source/Tests/FEXLoader.cpp b/Source/Tests/FEXLoader.cpp
+index 12c3de2c..1e093581 100644
+--- a/Source/Tests/FEXLoader.cpp
++++ b/Source/Tests/FEXLoader.cpp
+@@ -233,10 +233,10 @@ int main(int argc, char **argv, char **const envp) {
+   }
+
+   // Ensure FEXServer is setup before config options try to pull CONFIG_ROOTFS
+-  if (!FEXServerClient::SetupClient(argv[0])) {
+-    LogMan::Msg::EFmt("FEXServerClient: Failure to setup client");
+-    return -1;
+-  }
++  // if (!FEXServerClient::SetupClient(argv[0])) {
++    // LogMan::Msg::EFmt("FEXServerClient: Failure to setup client");
++    // return -1;
++  // }
+
+   FEX_CONFIG_OPT(SilentLog, SILENTLOG);
+   FEX_CONFIG_OPT(AOTIRCapture, AOTIRCAPTURE);
