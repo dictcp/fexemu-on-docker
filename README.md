@@ -1,5 +1,12 @@
-FEX-Emu for Docker on ARM
+# Running Intel binary in Docker VM on ARM machine (Apple Silicon M1/M2, AWS Graviton) via FEX-Emu
 
+## Status
+- Roughly half of the native performance (better than qemu-x86-64)
+- apt works normally
+- OpenSSL (openssl speed md5) crash
+- Geekbench 5 quit abnormally
+
+## Install steps
 ```bash
 # build FEXInterpreter
 docker build -t fex .
